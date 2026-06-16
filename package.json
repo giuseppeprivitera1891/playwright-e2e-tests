@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "demo": "npx playwright test tests/demo/mytest.spec.ts --headed",
+    "login": "npx playwright test tests/functional/login.spec.ts --headed"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/giuseppeprivitera1891/playwright-e2e-tests.git"
@@ -18,6 +21,7 @@
   "homepage": "https://github.com/giuseppeprivitera1891/playwright-e2e-tests#readme",
   "devDependencies": {
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.2"
+    "@types/node": "^25.9.2",
+    "allure-playwright": "^3.10.0"
   }
 }
